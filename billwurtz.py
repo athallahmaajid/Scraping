@@ -51,9 +51,9 @@ dur = pd.Series(dur)
 result = pd.DataFrame(data={'title':title,
                             'link':link,
                             'released':released,
-                            'duration':duration})
+                            'duration':dur})
 
 #Convert into csv file
 result.to_csv('result_billwurtz.csv')
 #Convert into json file
-result.to_json('result_billwurtz.json', orient='records'    )
+result.to_json('result_billwurtz.json', orient='records')
