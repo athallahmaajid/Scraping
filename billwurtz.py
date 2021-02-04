@@ -54,6 +54,6 @@ result = pd.DataFrame(data={'title':title,
                             'duration':dur})
 
 #Convert into csv file
-result.to_csv('result_billwurtz.csv')
+result.to_csv('result_billwurtz.csv', index=False)
 #Convert into json file
 result.to_json('result_billwurtz.json', orient='records')
