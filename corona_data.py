@@ -9,4 +9,5 @@ html = pd.read_html(source)
 
 now = html[0]
 print(now.tail(59))
+now.drop(columns=["#", "Unnamed: 0"])
 now.to_csv('corona_data.csv')
